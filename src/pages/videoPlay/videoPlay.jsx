@@ -1,0 +1,11 @@
+import React from "react";
+import './videoPlay.css';
+const VideoPlay=()=>{
+  return(
+    <div>
+      
+    </div>
+  );
+}
+
+export default VideoPlay;
