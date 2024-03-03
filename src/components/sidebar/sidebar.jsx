@@ -9,11 +9,13 @@ import tech from "../../assets/Icons/tech.png";
 import music from "../../assets/Icons/music.png";
 import blog from "../../assets/Icons/blog.png";
 import news from "../../assets/Icons/news.png";
+import mime from "../../assets/Images/mime.png";
+import riolu from "../../assets/Images/riolu.png";
+import greninja from "../../assets/Images/greninja.png";
 
-
-const Sidebar = () => {
+const Sidebar = ({sidebar}) => {
   return (
-    <div className='sidebar'>
+    <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
         <div className="shortcut-links">
             <div className="side-link">
                 <img src={home} alt="" /><p>Home</p>
@@ -44,12 +46,16 @@ const Sidebar = () => {
             </div>
             <hr />
         </div>
-        <div className="subscride-list">
+        <div className="subscribed-list">
             <h3>Subscribed</h3>
             <div className="side-link">
-                <img src="" alt="jack" /><p>PewPewPew</p>
-                <img src="" alt="jhon" /><p>Beast</p>
-                <img src="" alt="albart" /><p>Mr.Mime</p>
+                <img src={riolu} alt="Riolu" /><p>Riolu</p>
+            </div>
+            <div className="side-link">
+                <img src={greninja} alt="Greninja" /><p>Greninja</p>
+            </div>
+            <div className="side-link">
+                <img src={mime} alt="Mr.Mime" /><p>Mr.Mime</p>
             </div>
         </div>
     </div>
