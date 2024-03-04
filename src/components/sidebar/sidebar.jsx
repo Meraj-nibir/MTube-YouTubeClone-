@@ -13,35 +13,35 @@ import mime from "../../assets/Images/mime.png";
 import riolu from "../../assets/Images/riolu.png";
 import greninja from "../../assets/Images/greninja.png";
 
-const Sidebar = ({sidebar}) => {
+const Sidebar = ({sidebar, category, setCategory}) => {
   return (
     <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
         <div className="shortcut-links">
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={home} alt="" /><p>Home</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={game_icon} alt="" /><p>Games</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={automobiles} alt="" /><p>Automobiles</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={sports} alt="" /><p>Sports</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={entertainment} alt="" /><p>Entertainment</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={tech} alt="" /><p>Technologies</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={music} alt="" /><p>Musics</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={blog} alt="" /><p>Blogs</p>
             </div>
-            <div className="side-link">
+            <div className="side-link" onClick={()=> setCategory(0)}>
                 <img src={news} alt="" /><p>News</p>
             </div>
             <hr />
