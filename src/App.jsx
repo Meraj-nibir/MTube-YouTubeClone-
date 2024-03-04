@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/navbar/navbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
-import VideoPlay from "./pages/videoPlay/videoPlay";
+import Video from "./pages/video/video";
 const App=()=>{
   const [sidebar,setsidebar]= useState(true);
   return(
@@ -10,7 +10,7 @@ const App=()=>{
       <Navbar setsidebar={setsidebar}/>
       <Routes>
         <Route path="/" element={<HomePage sidebar={sidebar} />} />
-        <Route path="/videoPlay/:categoryID/:videoId" element={<VideoPlay />} />
+        <Route path="/video/:categoryID/:videoId" element={<Video />} />
       </Routes>
     </div>
   );
