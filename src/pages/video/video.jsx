@@ -2,10 +2,16 @@ import React from "react";
 import VideoPlay from "../../components/videoPlay/videoPlay";  
 import './video.css';
 import Recommended from "../../components/recommended/recommended";
+import { useParams } from "react-router-dom";
+
+
 const Video=()=>{
+
+  const{videoId,categoryId} = useParams();
+
   return(
     <div className="play-container">
-      <VideoPlay/>
+      <VideoPlay videoId={videoId}/>
       <Recommended/>
     </div>
   );
